@@ -1,0 +1,27 @@
+{
+  "name": "remove-user-agent",
+  "displayName": "Remove User-Agent",
+  "description": "Remove User-Agent lines from the active file. created by XsiSec",
+  "version": "1.0.0",
+  "engines": {
+      "vscode": "^1.0.0"
+  },
+  "scripts": {
+      "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "activationEvents": [
+      "onCommand:extension.removeUserAgent"
+  ],
+  "main": "./extension",
+  "contributes": {
+      "commands": [{
+          "command": "extension.removeUserAgent",
+          "title": "Remove User-Agent Lines"
+      }]
+  },
+  "devDependencies": {
+      "@types/node": "^10.12.18",
+      "typescript": "^3.1.6",
+      "vscode": "^1.1.36"
+  }
+}
