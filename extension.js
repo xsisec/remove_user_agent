@@ -1,10 +1,6 @@
 const vscode = require('vscode');
 const fs = require('fs');
-const path = require('path');
 
-/**
- * @param {vscode.ExtensionContext} context
- */
 function activate(context) {
     let disposable = vscode.commands.registerCommand('extension.removeUserAgent', function () {
         const editor = vscode.window.activeTextEditor;
